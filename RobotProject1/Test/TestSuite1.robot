@@ -36,7 +36,7 @@ FirstSeleniumTest
 
 SampleLoginTest
     [Documentation]    This is a sample login test
-    Open Browser    ${URL}       chrome
+    Open Browser    ${URL}       ff
     Set Browser Implicit Wait    5
     Input Text         id=txtUsername    @{CREDENTIALS}[0]  
     Sleep    2    
@@ -59,5 +59,21 @@ YoutubeSampleTest
     Input Text    name=search_query    Robot framework    
     Press Keys    id=search    ENTER
     Close Browser
+    
+FacebookSignUp
+    [Documentation]    This is Facebook SignUp demo
+    Open Browser    https://www.facebook.com/r.php    chrome
+    Maximize Browser Window
+    Input Text    name=firstname    Harshit    
+    Input Text    name=lastname    demo
+    Input Text    name=reg_email__    harshitcibc@yahoo.com  
+    Input Text    name=reg_email_confirmation__    harshitcibc@yahoo.com    
+    Input Text    name=reg_passwd__    Pulsar1419    
+    Click Element    id=u_0_7    
+    Click Button    id=u_0_14 
+    Get Window Handles    browser=CURRENT      
+    # Switch Window  Click Button    XPath=//*[@id="facebook"]/body/div[3]/div[2]/div/div/div/div[3]/button    
+    Sleep    3    
+    #Close Browser
         
          

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20191103 16:58:00.686" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20191103 17:44:53.087" rpa="false">
 <suite id="s1" name="RobotProject1" source="C:\Users\urvij\git\RobotProject_Demo\RobotProject1">
 <suite id="s1-s1" name="Test" source="C:\Users\urvij\git\RobotProject_Demo\RobotProject1\Test">
 <suite id="s1-s1-s1" name="TestSuite1" source="C:\Users\urvij\git\RobotProject_Demo\RobotProject1\Test\TestSuite1.robot">
@@ -8,88 +8,134 @@
 <arguments>
 <arg>I am inside Test Suite Setup</arg>
 </arguments>
-<msg timestamp="20191103 16:58:00.912" level="INFO">I am inside Test Suite Setup</msg>
-<status status="PASS" starttime="20191103 16:58:00.912" endtime="20191103 16:58:00.913"></status>
+<msg timestamp="20191103 17:44:53.317" level="INFO">I am inside Test Suite Setup</msg>
+<status status="PASS" starttime="20191103 17:44:53.317" endtime="20191103 17:44:53.317"></status>
 </kw>
-<test id="s1-s1-s1-t1" name="YoutubeSampleTest">
+<test id="s1-s1-s1-t1" name="FacebookSignUp">
 <kw name="Log" library="BuiltIn" type="setup">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>I am inside Test Setup</arg>
 </arguments>
-<msg timestamp="20191103 16:58:00.914" level="INFO">I am inside Test Setup</msg>
-<status status="PASS" starttime="20191103 16:58:00.914" endtime="20191103 16:58:00.914"></status>
+<msg timestamp="20191103 17:44:53.318" level="INFO">I am inside Test Setup</msg>
+<status status="PASS" starttime="20191103 17:44:53.318" endtime="20191103 17:44:53.318"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>https://www.youtube.com</arg>
+<arg>https://www.facebook.com/r.php</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20191103 16:58:00.914" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com'.</msg>
-<status status="PASS" starttime="20191103 16:58:00.914" endtime="20191103 16:58:08.097"></status>
-</kw>
-<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<arguments>
-<arg>5</arg>
-</arguments>
-<status status="PASS" starttime="20191103 16:58:08.097" endtime="20191103 16:58:08.102"></status>
+<msg timestamp="20191103 17:44:53.319" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/r.php'.</msg>
+<status status="PASS" starttime="20191103 17:44:53.319" endtime="20191103 17:45:00.119"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20191103 16:58:08.102" endtime="20191103 16:58:12.303"></status>
+<status status="PASS" starttime="20191103 17:45:00.119" endtime="20191103 17:45:04.238"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>name=search_query</arg>
-<arg>Robot framework</arg>
+<arg>name=firstname</arg>
+<arg>Harshit</arg>
 </arguments>
-<msg timestamp="20191103 16:58:12.304" level="INFO">Typing text 'Robot framework' into text field 'name=search_query'.</msg>
-<status status="PASS" starttime="20191103 16:58:12.303" endtime="20191103 16:58:12.590"></status>
+<msg timestamp="20191103 17:45:04.239" level="INFO">Typing text 'Harshit' into text field 'name=firstname'.</msg>
+<status status="PASS" starttime="20191103 17:45:04.239" endtime="20191103 17:45:04.349"></status>
 </kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>id=search</arg>
-<arg>ENTER</arg>
+<arg>name=lastname</arg>
+<arg>demo</arg>
 </arguments>
-<msg timestamp="20191103 16:58:12.590" level="INFO">Sending key(s) ('ENTER',) to id=search element.</msg>
-<msg timestamp="20191103 16:58:12.600" level="INFO">Pressing special key ENTER to element.</msg>
-<status status="PASS" starttime="20191103 16:58:12.590" endtime="20191103 16:58:13.244"></status>
+<msg timestamp="20191103 17:45:04.350" level="INFO">Typing text 'demo' into text field 'name=lastname'.</msg>
+<status status="PASS" starttime="20191103 17:45:04.350" endtime="20191103 17:45:04.418"></status>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20191103 16:58:13.245" endtime="20191103 16:58:15.382"></status>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=reg_email__</arg>
+<arg>harshitcibc@yahoo.com</arg>
+</arguments>
+<msg timestamp="20191103 17:45:04.418" level="INFO">Typing text 'harshitcibc@yahoo.com' into text field 'name=reg_email__'.</msg>
+<status status="PASS" starttime="20191103 17:45:04.418" endtime="20191103 17:45:04.574"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=reg_email_confirmation__</arg>
+<arg>harshitcibc@yahoo.com</arg>
+</arguments>
+<msg timestamp="20191103 17:45:04.574" level="INFO">Typing text 'harshitcibc@yahoo.com' into text field 'name=reg_email_confirmation__'.</msg>
+<status status="PASS" starttime="20191103 17:45:04.574" endtime="20191103 17:45:04.703"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=reg_passwd__</arg>
+<arg>Pulsar1419</arg>
+</arguments>
+<msg timestamp="20191103 17:45:04.703" level="INFO">Typing text 'Pulsar1419' into text field 'name=reg_passwd__'.</msg>
+<status status="PASS" starttime="20191103 17:45:04.703" endtime="20191103 17:45:04.790"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=u_0_7</arg>
+</arguments>
+<msg timestamp="20191103 17:45:04.791" level="INFO">Clicking element 'id=u_0_7'.</msg>
+<status status="PASS" starttime="20191103 17:45:04.791" endtime="20191103 17:45:04.861"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=u_0_14</arg>
+</arguments>
+<msg timestamp="20191103 17:45:04.861" level="INFO">Clicking button 'id=u_0_14'.</msg>
+<status status="PASS" starttime="20191103 17:45:04.861" endtime="20191103 17:45:04.946"></status>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<arguments>
+<arg>browser=CURRENT</arg>
+</arguments>
+<status status="PASS" starttime="20191103 17:45:04.946" endtime="20191103 17:45:04.949"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20191103 17:45:07.952" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191103 17:45:04.949" endtime="20191103 17:45:07.953"></status>
 </kw>
 <kw name="Log" library="BuiltIn" type="teardown">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>I am inside Test Teardown</arg>
 </arguments>
-<msg timestamp="20191103 16:58:15.386" level="INFO">I am inside Test Teardown</msg>
-<status status="PASS" starttime="20191103 16:58:15.384" endtime="20191103 16:58:15.387"></status>
+<msg timestamp="20191103 17:45:07.957" level="INFO">I am inside Test Teardown</msg>
+<status status="PASS" starttime="20191103 17:45:07.954" endtime="20191103 17:45:07.957"></status>
 </kw>
-<doc>This is a youtube search test</doc>
+<doc>This is Facebook SignUp demo</doc>
 <tags>
 <tag>sanity</tag>
 </tags>
-<status status="PASS" starttime="20191103 16:58:00.913" endtime="20191103 16:58:15.388" critical="yes"></status>
+<status status="PASS" starttime="20191103 17:44:53.318" endtime="20191103 17:45:07.958" critical="yes"></status>
 </test>
 <kw name="Log" library="BuiltIn" type="teardown">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>I am inside Test Suite Teardown</arg>
 </arguments>
-<msg timestamp="20191103 16:58:15.393" level="INFO">I am inside Test Suite Teardown</msg>
-<status status="PASS" starttime="20191103 16:58:15.392" endtime="20191103 16:58:15.394"></status>
+<msg timestamp="20191103 17:45:07.962" level="INFO">I am inside Test Suite Teardown</msg>
+<status status="PASS" starttime="20191103 17:45:07.961" endtime="20191103 17:45:07.962"></status>
 </kw>
-<status status="PASS" starttime="20191103 16:58:00.733" endtime="20191103 16:58:15.394"></status>
+<status status="PASS" starttime="20191103 17:44:53.137" endtime="20191103 17:45:07.962"></status>
 </suite>
-<status status="PASS" starttime="20191103 16:58:00.731" endtime="20191103 16:58:15.403"></status>
+<status status="PASS" starttime="20191103 17:44:53.135" endtime="20191103 17:45:07.964"></status>
 </suite>
-<status status="PASS" starttime="20191103 16:58:00.713" endtime="20191103 16:58:15.406"></status>
+<status status="PASS" starttime="20191103 17:44:53.115" endtime="20191103 17:45:07.965"></status>
 </suite>
 <statistics>
 <total>
@@ -106,6 +152,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20191103 16:58:00.680" level="WARN">Collapsing consecutive whitespace during parsing is deprecated. Fix ' *** Settings ***' in file 'C:\Users\urvij\git\RobotProject_Demo\RobotProject1\Test\TestSuite1.robot' on line 1.</msg>
+<msg timestamp="20191103 17:44:53.079" level="WARN">Collapsing consecutive whitespace during parsing is deprecated. Fix ' *** Settings ***' in file 'C:\Users\urvij\git\RobotProject_Demo\RobotProject1\Test\TestSuite1.robot' on line 1.</msg>
 </errors>
 </robot>
